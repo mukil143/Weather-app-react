@@ -4,6 +4,8 @@ import { createRef } from "react";
 export const weathercontext = createContext();
 
 const Weathercontext = ({ children }) => {
+  
+  
   const inputref = createRef();
   const [weather, setweather] = useState();
   const [temperature, settemperature] = useState();
@@ -13,6 +15,7 @@ const Weathercontext = ({ children }) => {
   const [input, setinput] = useState("");
 
   const getweatherdata = async () => {
+    
     if (input === "") {
       alert("Please enter a city name");
       return;
@@ -25,9 +28,9 @@ const Weathercontext = ({ children }) => {
     settemperature(data.main.temp);
     setdescription(data.weather[0].description);
     setname(data.name);
-    console.log(data);
     // const {main,weather}=data;
   };
+
 
   const onfocus = () => {
     inputref.current.focus();
@@ -42,7 +45,6 @@ const Weathercontext = ({ children }) => {
         input,
         setinput,
         getweatherdata,
-        data,
         weather,
         temperature,
         description,

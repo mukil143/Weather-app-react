@@ -7,14 +7,13 @@ const Home = () => {
     setinput,
     input,
     getweatherdata,
-    data,
+    weatherdata,
     weather,
     temperature,
     description,
     name,
     inputref,
   } = useContext(weathercontext);
-  console.log(data);
 
   const [darkmode,setdarkmode]=useState(false);
 
