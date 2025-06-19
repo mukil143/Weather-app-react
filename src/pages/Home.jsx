@@ -32,7 +32,7 @@ const Home = () => {
     backgroundColor: darkmode ? "black" : "#38bdf8", // dark blue : sky blue
     color: darkmode ? "white" : "white"
   }}  className=" bg-sky-400 h-dvh text-white flex flex-col items-center transform transition-colors duration-300 ease-in-out">
-        <span  onClick={()=>{setdarkmode(!darkmode)}} className="fixed right-5 top-5 text-3xl transform transition duration-300 " >{darkmode?<span><HiSun/></span>:<HiMoon/>}</span>
+        <span  onClick={()=>{setdarkmode(!darkmode)}} className="fixed right-5 top-5 text-3xl transform transition duration-300 hover:cursor-pointer  " >{darkmode?<span><HiSun/></span>:<HiMoon/>}</span>
       <div className="*:mt-4">
         <h1 className="text-4xl font-bold  md:text-5xl   ">Weather App🌥️</h1>
         <input
@@ -56,10 +56,10 @@ const Home = () => {
           <a href=""></a>Get Report
         </button>
         <div className="  border-2 rounded-lg p-5  shadow-lg  bg-white/20 backdrop-blur-sm *:mt-2 *:text-2xl">
-          <h1 className="">📍Location : {name} </h1>
-          <h1 className="">🌥️Weather : {weather} </h1>
-          <h2>🌡️Temperature : {temperature} </h2>
-          <h2>📋Description : {description} </h2>
+          <h1 className="">📍 Location : {name} </h1>
+          <h1 className="">🌥️ Weather : {weather} </h1>
+          <h2>🌡️ Temperature : {temperature} </h2>
+          <h2>📋 Description : {description} </h2>
         </div>
       </div>
     </section>
