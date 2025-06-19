@@ -56,10 +56,10 @@ const Home = () => {
           <a href=""></a>Get Report
         </button>
         <div className="  border-2 rounded-lg p-5  shadow-lg  bg-white/20 backdrop-blur-sm *:mt-2 *:text-2xl">
-          <h1 className="">Location : {name} </h1>
-          <h1 className="">Weather : {weather} </h1>
-          <h2>Temperature : {temperature} </h2>
-          <h2>Description : {description} </h2>
+          <h1 className="">📍Location : {name} </h1>
+          <h1 className="">🌥️Weather : {weather} </h1>
+          <h2>🌡️Temperature : {temperature} </h2>
+          <h2>📋Description : {description} </h2>
         </div>
       </div>
     </section>
