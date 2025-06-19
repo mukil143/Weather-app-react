@@ -1,6 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
 import { createRef } from "react";
-import { data } from "react-router";
 
 export const weathercontext = createContext();
 
