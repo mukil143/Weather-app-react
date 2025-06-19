@@ -7,4 +7,8 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  server: {
+    open:true,
+    historyApiFallback: true, // 👈 Important for client-side routing
+  },
 })
